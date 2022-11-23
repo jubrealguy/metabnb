@@ -1,38 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;600;700&display=swap');
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .App {
-  text-align: center;
+  padding-top: 4rem;
+  color: #434343;
+  font-family: "Red Rose";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  padding: 0 11rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-1 {
+  height: 3.6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-2 {
+  height: 3.2rem;
+}
+
+.header__nav {
+  flex: 0 0 50%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 18%;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: inherit;
+}
+
+.header__btn-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border-radius: 1rem;
+  padding: 1.4rem 2.6rem;
+}
+
+.intro {
+  padding: 0 11rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.intro__content {
+  flex: 0 0 55%;
+  padding-right: 16rem;
+  padding-top: 4rem;
+}
+
+.intro__content-head {
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 7.8rem;
+  margin-bottom: 3rem;
+}
+
+.intro__content-head > span {
+  color: #A02279;
+  font-weight: 700;
+}
+
+.intro__content-body {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.intro__image {
+  display: flex;
+}
+
+.image-left {
+  margin-top: 10rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.intro__content-search {
+  position: relative;
+}
+
+.search-input {
+  position: absolute;
+  width: 100%;
+  padding: 2rem 30rem 2rem 2rem;
+  display: inline-block;
+  border-radius: 1.2rem;
+  border: 1px solid #B8B8B8;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #B8B8B8;
+}
+
+.search-input:focus {
+  border: 1px solid #B8B8B8;
+  outline: none;
+}
+
+.search-btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+  padding: 2rem 10rem;
+  background-color: #A02279;
+  display: inline-block;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  border: none;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: #ffffff;
+}
+
+.wallet {
+  padding: 2rem 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #A02279;
+  margin-bottom: 13rem;
+}
+
+.wallet__name {
+  display: flex;
+  align-items: center;
+}
+
+.wallet__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.03em;
+}
+
+.wallet__img {
+  margin-right: 1.5rem;
+}
+
+.sectionNft {
+  padding: 0 11rem;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+.sectionNft__content {
+  flex: 0 0 50%;
+  padding-right: 25rem;
+}
+
+.sectionNft__head {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.sectionNft__body {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.sectionNft__link {
+  text-decoration: none;
+  color: #A02279;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  border-radius: 8px;
+}
+
+.sectionNft__images {
+  position: relative;
+  height: 75rem;
+}
+
+.sectionNft__img {
+  position: absolute;
+}
+
+.img1 {
+  z-index: 2;
+  top: 23rem;
+  left: 0;
+  height: 35rem;
+  width: 37.8rem;
+}
+
+.img2 {
+  z-index: 3;
+  top: 30rem;
+  left: 25rem;
+  height: 30rem;
+  width: 37.8rem;
+}
+
+.img3 {
+  top: 9rem;
+  left: 20rem;
+  height: 30rem;
+  width: 40rem;
+}
+
+.footer {
+  padding: 5rem 20rem;
+  background-color: #1D1D1E;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom:9rem;
+}
+
+.footer__img {
+  height: 3.6rem;
+}
+
+.footer__txt {
+  height: 3.2rem;
+}
+
+.img-ig {
+  width: 2rem;
+}
+
+.footer__icons {
+  margin-bottom: 3.5rem;
+}
+
+.footer_icon {
+  margin-right: 2rem;
+}
+
+.footer__copy {
+  color: #F1F3F9;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.footer__list {
+  color: #ffffff;
+  list-style: none;
+}
+
+.footer__head {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.footer__item {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3.5rem;
 }
